@@ -1,0 +1,29 @@
+# ROS2 workspace build files
+build/
+install/
+log/
+
+# VSCode files
+.vscode/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Dependencies
+.dependencies/
+
+# Backup files
+*~
+*.bak
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
