@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 MIT License / Лицензия MIT
 
 Copyright (c) 2025 Кищенко Андрей Александрович
 (Copyright (c) 2025 Kishchenko Andrey Alexandrovich)
 
 EN:
+=======
+MIT License
+
+Copyright (c) 2025 Андрей Александрович Кищенко
+
+>>>>>>> b0ea1a18fc061a7a1ac03b956f0bd97a21396089
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -21,6 +28,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+<<<<<<< HEAD
 
 RU:
 Данная лицензия разрешает лицам, получившим копию данного программного
@@ -43,3 +51,5 @@ RU:
 ИЛИ ПО ИНЫМ ТРЕБОВАНИЯМ, В ТОМ ЧИСЛЕ, ПРИ ДЕЙСТВИИ КОНТРАКТА, ДЕЛИКТЕ
 ИЛИ ИНОЙ СИТУАЦИИ, ВОЗНИКШИМ ИЗ-ЗА ИСПОЛЬЗОВАНИЯ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ
 ИЛИ ИНЫХ ДЕЙСТВИЙ С ПРОГРАММНЫМ ОБЕСПЕЧЕНИЕМ.
+=======
+>>>>>>> b0ea1a18fc061a7a1ac03b956f0bd97a21396089
