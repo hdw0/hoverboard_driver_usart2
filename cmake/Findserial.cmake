@@ -1,5 +1,15 @@
-find_path(SERIAL_INCLUDE_DIR NAMES serial/serial.h)
-find_library(SERIAL_LIBRARY NAMES serial)
+find_path(SERIAL_INCLUDE_DIR NAMES serial/serial.h
+  PATHS
+    /usr/include
+    /usr/local/include
+)
+
+find_library(SERIAL_LIBRARY NAMES serial
+  PATHS
+    /usr/lib
+    /usr/lib/x86_64-linux-gnu
+    /usr/local/lib
+)
 
 if(SERIAL_INCLUDE_DIR AND SERIAL_LIBRARY)
   set(SERIAL_FOUND TRUE)
