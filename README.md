@@ -45,20 +45,25 @@ ROS2 драйвер для управления ховербордом чере�
 
 4. Добавьте права на выполнение скриптов:
     ```bash
-    chmod +x scripts/setup_ros2_workspace.sh
-    chmod +x scripts/run_hoverboard_node.sh
+    chmod +x ~/ros2_ws/src/hoverboard_driver_usart2/scripts/setup_ros2_workspace.sh
+    chmod +x ~/ros2_ws/src/hoverboard_driver_usart2/scripts/run_hoverboard_node.sh
     ```
 
 5. Запустите скрипт настройки рабочего пространства:
     ```bash
-    ./scripts/setup_ros2_workspace.sh
+    ~/ros2_ws/src/hoverboard_driver_usart2/scripts/setup_ros2_workspace.sh
     ```
 
 ## Запуск узла
 
 Для запуска узла hoverboard выполните:
 ```bash
-./scripts/run_hoverboard_node.sh
+~/ros2_ws/src/hoverboard_driver_usart2/scripts/run_hoverboard_node.sh
+```
+
+Для запуска C++ версии узла выполните:
+```bash
+ros2 run hoverboard_driver_usart2 hoverboard_node
 ```
 
 ## Изменение рабочего порта
