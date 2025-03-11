@@ -12,4 +12,4 @@ source /opt/ros/humble/setup.bash
 source ~/ros2_ws/install/setup.bash
 
 # Запуск узла
-ros2 run hoverboard_driver_usart2 $NODE_TYPE
+ros2 run hoverboard_driver_usart2 $NODE_TYPE --ros-args -p serial_port:=/dev/ttyUSB0

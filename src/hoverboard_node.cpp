@@ -161,8 +161,8 @@ private:
             if (ec) {
                 RCLCPP_ERROR(this->get_logger(), "Serial write error: %s", ec.message().c_str());
             } else {
-                RCLCPP_INFO(this->get_logger(), "Sending command: steer=%d, speed=%d",
-                            last_command.steer, last_command.speed);
+                //RCLCPP_INFO(this->get_logger(), "Sending command: steer=%d, speed=%d",
+                //            last_command.steer, last_command.speed);
             }
         } catch (const std::exception &e) {
             RCLCPP_ERROR(this->get_logger(), "Exception in sendCommandTimerCallback: %s", e.what());
@@ -225,7 +225,7 @@ private:
             uint16_t calculated_checksum = packet.start ^ packet.cmd1 ^ packet.cmd2 ^
                 packet.speedR_meas ^ packet.speedL_meas ^ packet.batVoltage ^ packet.boardTemp ^ packet.cmdLed;
             if (packet.start == START_FRAME && calculated_checksum == packet.checksum) {
-                RCLCPP_INFO(this->get_logger(), "Valid feedback received");
+                //RCLCPP_INFO(this->get_logger(), "Valid feedback received");
                 publishFeedback(packet);
                 read_buffer_.erase(read_buffer_.begin(), read_buffer_.begin() + pos + packet_size);
             } else {
@@ -262,7 +262,7 @@ private:
         nav_msgs::msg::Odometry odom_msg;
         odom_msg.header.stamp = current_time;
         odom_msg.header.frame_id = "odom";
-        odom_msg.child_frame_id = "base_link";
+        odom_msg.child_frame_id = "base_footprint";
         odom_msg.pose.pose.position.x = x_;
         odom_msg.pose.pose.position.y = y_;
         tf2::Quaternion q;
@@ -279,7 +279,7 @@ private:
         geometry_msgs::msg::TransformStamped odom_tf;
         odom_tf.header.stamp = current_time;
         odom_tf.header.frame_id = "odom";
-        odom_tf.child_frame_id = "base_link";
+        odom_tf.child_frame_id = "base_footprint";
         odom_tf.transform.translation.x = x_;
         odom_tf.transform.translation.y = y_;
         odom_tf.transform.translation.z = 0.0;
